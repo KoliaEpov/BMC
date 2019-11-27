@@ -12,6 +12,7 @@ phases:
   pre_build:
     commands:
     - npm install
+    - npm rebuild node-sass
   build:
     commands:
     - npm run build:ci
