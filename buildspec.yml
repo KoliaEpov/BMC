@@ -1,9 +1,23 @@
+version: 0.1
+
 phases:
   install:
     commands:
     - echo Entered the install phase...
-    - apt-get update -y
-    - apt-get install -y npm
-    - npm -v
-    finally:
-    - echo This always runs even if the update or install command fails
+    finnaly:
+    - echo finnaly Entered the install phase...
+  pre-build:
+    commands:
+    - echo pre-build
+    finnaly:
+    - echo finnaly Entered the install phase...
+  build:
+    commands:
+    - echo build
+    finnaly:
+    - echo finnaly Entered the install phase...
+  post-build:
+    commands:
+    - echo post-build
+    finnaly:
+    - echo finnaly Entered the install phase...
