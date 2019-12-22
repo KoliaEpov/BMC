@@ -27,4 +27,4 @@ artifacts:
   - '**/*.css'
   - '**/*.ico'
   discard-paths: yes
-  base-directory: 'dist/bmc'
+  base-directory: '/'
