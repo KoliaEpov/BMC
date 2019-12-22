@@ -11,14 +11,14 @@ phases:
     - dpkg -i google-chrome*.deb
   pre_build:
     commands:
-    - npm install
-    - npm rebuild node-sass
+#    - npm install
+#    - npm rebuild node-sass
   build:
     commands:
-    - npm run build:ci
+#    - npm run build:ci
   post_build:
     commands:
-    - aws s3 sync ./dist/bmc s3://1234444 --acl 'public-read' --delete
+    - aws s3 sync ./CHANGELOG.md s3://1234444 --acl 'public-read' --delete
 
 artifacts:
   files:
