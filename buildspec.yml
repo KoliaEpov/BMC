@@ -18,7 +18,7 @@ phases:
 #    - npm run build:ci
   post_build:
     commands:
-    - aws s3 sync ./CHANGELOG.md s3://1234444 --acl 'public-read' --delete
+    - aws s3 sync ./CHANGELOG.md s3://bmc5 --acl 'public-read' --delete
 
 artifacts:
   files:
